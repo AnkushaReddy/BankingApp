@@ -28,7 +28,17 @@
             <table>
                     <tr>
                         <td> <LABEL>Search Criteria</LABEL></td>
-                        <td> <h:inputText id="account_num" value="#{transactionHistoryManagedBean.accountNumber}"/></td>
+                        
+                        <h:form>
+                                <h:panelGrid columns="2" cellpadding="3">  
+                                <p:outputLabel for="inline" value="Start Date" />  
+                                 <p:calendar id="inline" value="#{calendar.date}" mode="popup" />  
+                                 </h:panelGrid>  
+                                <h:panelGrid columns="2" cellpadding="5">  
+                                <p:outputLabel for="inline1" value="End Date" />  
+                                <p:calendar id="inline1" value="#{calendar.date}" mode="popup" />  
+                                </h:panelGrid>
+                        </h:form>
                         <td><h:commandButton value="Search" action="#{transactionHistoryManagedBean.loadHistory}"/></td>
                     </tr>
             </table>
