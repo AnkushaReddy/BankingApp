@@ -7,4 +7,5 @@
 /OraclePaymentsBankApp/OraclePaymentsBankApp-war/build/
 /OraclePaymentsBankApp/OraclePaymentsBankApp-ejb/build/
 /OraclePaymentsBankApp/OraclePaymentsBankApp-ejb/dist/
+/OraclePaymentsBankApp/nbproject/project.properties
 .DS_Store
