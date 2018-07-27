@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Oracle Payments Bank - Contact</title>
+        <style>
+            styleborder {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            
+        </style>
+    </h:head>
+    <ui:include src="header.xhtml"/>
+    <hr/>
+    <h:body>
+        <h:form>
+            <p:menubar >
+                <p:menuitem value="Home" url="index.xhtml"/>
+                
+                 <p:menuitem value="Contact" url="contact.xhtml"/>
+                
+           
+            </p:menubar>
+        </h:form>
+        <center>
+        <h4>Contact Us:</h4>
+        <table class="styleborder">
+           <tr>
+               <th class="styleborder"><h:outputLabel value="Bank"/></th>
+               <td class="styleborder"><h:outputText id="bankName" value="#{bankDetailsManagedBean.bankName}"/></td>
+           </tr>
+           <tr>
+            <th class="styleborder"><h:outputLabel value="Address"/></th>
+            
+            <td class="styleborder"><h:outputText id="bankAddress" value="#{bankDetailsManagedBean.bankAddress}"/></td>
+           </tr>
+       </table>  
+        </center>
+            
+    </h:body>
+   
+    <ui:include src="footer.xhtml"/>
+</html>
+

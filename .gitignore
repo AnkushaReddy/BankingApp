@@ -1,0 +1,10 @@
+/OraclePaymentsBankApp/nbproject/private/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-war/nbproject/private/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-ejb/nbproject/private/
+/OraclePaymentsBankApp/build/
+/OraclePaymentsBankApp/dist/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-war/dist/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-war/build/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-ejb/build/
+/OraclePaymentsBankApp/OraclePaymentsBankApp-ejb/dist/
+.DS_Store

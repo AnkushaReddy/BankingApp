@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Welcome to Oracle Payments Bank</title>
+    </h:head>
+    <ui:include src="header.xhtml"/>
+    <hr/>
+    <h:body>
+        <h:form>
+            <p:menubar>
+                <p:menuitem value="Home" url="index.xhtml"/>
+                <p:menuitem value="Contact" url="contact.xhtml"/>
+            </p:menubar>
+        </h:form>
+        <center>
+            <h3>Welcome to Oracle Payments Bank</h3>
+            <h:outputLabel value="#{userLoginManagedBean.message}" style="color: red"/>
+            <h:outputLabel value="#{userLoginManagedBean.passwordChangedMessage}" style="color: green"/>
+            <h:form>
+                <h:panelGrid columns="3">
+                    <h:outputLabel value="Customer Id:"/>
+                    <h:inputText value="#{userLoginManagedBean.customerId}" id="index_customerId" required="true" requiredMessage="Please provide customer id"/>
+                    <h:message for="index_customerId" style="color: red"/>
+                    <h:outputLabel value="Password:"/>
+                    <h:inputSecret value="#{userLoginManagedBean.password}" id="index_password"/>
+                    <h:message for="index_password" style="color: red"/>
+                    <h:commandButton value="Login" action="#{userLoginManagedBean.login}"/>
+                    <h:commandButton value="Forgot Password?" action="#{userLoginManagedBean.forgotPassword}"/>
+
+                </h:panelGrid>
+            </h:form>
+        </center>
+        <f:viewAction action="#{userLoginManagedBean.onLoad}"/>
+        <br />
+        
+    </h:body>
+
+    <ui:include src="footer.xhtml"/>
+</html>
+
